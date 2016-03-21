@@ -13,6 +13,7 @@
       />
 
   <include file="profiles.zcml" />
+  <include package=".browser" />
 
   <browser:page
       name="texttospeech-settings"

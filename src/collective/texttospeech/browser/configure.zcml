@@ -1,0 +1,15 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    i18n_domain="collective.texttospeech">
+
+  <browser:viewlet
+      name="collective.texttospeech"
+      class=".viewlets.TextToSpeechViewlet"
+      manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
+      template="templates/texttospeech.pt"
+      layer="collective.texttospeech.interfaces.IBrowserLayer"
+      permission="zope2.View"
+      />
+
+</configure>
