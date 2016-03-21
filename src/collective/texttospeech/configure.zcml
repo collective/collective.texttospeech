@@ -1,0 +1,30 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
+    xmlns:five="http://namespaces.zope.org/five"
+    xmlns:i18n="http://namespaces.zope.org/i18n"
+    i18n_domain="collective.texttospeech">
+
+  <five:registerPackage package="." />
+
+  <permission
+      id="collective.texttospeech.Setup"
+      title="collective.texttospeech: Setup"
+      />
+
+  <include file="profiles.zcml" />
+
+  <browser:page
+      name="texttospeech-settings"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".controlpanel.TextToSpeechControlPanel"
+      permission="collective.texttospeech.Setup"
+      />
+
+  <browser:resourceDirectory
+      name="collective.texttospeech"
+      directory="static"
+      layer="collective.texttospeech.interfaces.IBrowserLayer"
+      />
+
+</configure>

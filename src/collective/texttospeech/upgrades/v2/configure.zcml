@@ -1,0 +1,18 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup">
+
+  <genericsetup:upgradeSteps
+      source="1"
+      destination="2"
+      profile="collective.texttospeech:default">
+
+      <genericsetup:upgradeStep
+          title="Apply profile"
+          description=""
+          handler=".apply_profile"
+          />
+
+  </genericsetup:upgradeSteps>
+
+</configure>
