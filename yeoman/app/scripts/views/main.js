@@ -18,7 +18,10 @@ define([
       };
       super(options);
       this.template = JST['app/scripts/templates/main.ejs'];
-      this.playing = false;
+      this.paused = true;
+      this.onstart = this.onstart.bind(this);
+      this.onend = this.onend.bind(this);
+      rVoice.cancel();
       this.render();
     }
 
@@ -26,15 +29,35 @@ define([
       this.$el.html(this.template());
     }
 
+    onstart() {
+      this.$('#texttospeech-button').attr('value', 'Pause');
+    }
+
+    onend() {
+      this.$('#texttospeech-button').attr('value', 'Play');
+    }
+
     play_pause() {
-      if (this.playing) {
-        this.playing = false;
-        this.$('#texttospeech-button').attr('value', 'Play');
-        rVoice.cancel();
+      if (rVoice.isPlaying()) {
+        if (this.paused) {
+          this.paused = false;
+          this.$('#texttospeech-button').attr('value', 'Pause');
+          rVoice.resume();
+        } else {
+          this.paused = true;
+          this.$('#texttospeech-button').attr('value', 'Play');
+          rVoice.pause();
+        }
       } else {
-        this.playing = true;
-        this.$('#texttospeech-button').attr('value', 'Pause');
-        rVoice.speak($('#content').text());
+        this.paused = false;
+        rVoice.speak(
+          $('#content').text(),
+          'UK English Female',
+          {
+            onstart: this.onstart,
+            onend: this.onend
+          }
+        );
       }
     }
   };
