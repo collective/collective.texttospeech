@@ -1,4 +1,3 @@
 <div id="viewlet-texttospeech"
   i18n:domain="collective.texttospeech">
-  <input onclick='responsiveVoice.speak("Hello World");' type='button' value='� Play' />
 </div>
