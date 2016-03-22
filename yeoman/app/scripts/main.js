@@ -18,10 +18,14 @@ require.config({
 
 require([
   'backbone',
-  'views/main'
-], (Backbone, AppView) => {
+  'views/main',
+  'views/controlpanel'
+], (Backbone, AppView, ControlPanelView) => {
   Backbone.history.start();
   if ($('#viewlet-texttospeech').length > 0) {
-    return new AppView();
+    new AppView();
+  }
+  if ($('body.template-texttospeech-settings').length > 0) {
+    new ControlPanelView();
   }
 });

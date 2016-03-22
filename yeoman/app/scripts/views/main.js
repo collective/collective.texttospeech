@@ -21,7 +21,9 @@ define([
       this.paused = true;
       this.onstart = this.onstart.bind(this);
       this.onend = this.onend.bind(this);
-      rVoice.cancel();
+      // if (rVoice.isPlaying()) {
+      //   rVoice.cancel();
+      // }
       this.render();
     }
 
@@ -52,7 +54,7 @@ define([
         this.paused = false;
         rVoice.speak(
           $('#content').text(),
-          'UK English Female',
+          this.$el.attr('data-voice'),
           {
             onstart: this.onstart,
             onend: this.onend
