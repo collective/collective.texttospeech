@@ -6,7 +6,7 @@
   <browser:viewlet
       name="collective.texttospeech"
       class=".viewlets.TextToSpeechViewlet"
-      manager="plone.app.layout.viewlets.interfaces.IBelowContentTitle"
+      manager="plone.app.layout.viewlets.interfaces.IAboveContent"
       template="templates/texttospeech.pt"
       layer="collective.texttospeech.interfaces.IBrowserLayer"
       permission="zope2.View"

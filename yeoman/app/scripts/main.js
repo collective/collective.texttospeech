@@ -5,6 +5,10 @@ define('jquery', [], () => {
   return jQuery;
 });
 
+define('responsivevoice', [], () => {
+  return responsiveVoice;
+});
+
 require.config({
   paths: {
     backbone: '../bower_components/backbone/backbone',
@@ -12,12 +16,12 @@ require.config({
   }
 });
 
-// require([
-//   'backbone',
-//   'views/behaviorform'
-// ], (Backbone, AppView) => {
-//   Backbone.history.start();
-//   if ($('#fieldset-featured-image').length > 0) {
-//     return new AppView();
-//   }
-// });
+require([
+  'backbone',
+  'views/main'
+], (Backbone, AppView) => {
+  Backbone.history.start();
+  if ($('#viewlet-texttospeech').length > 0) {
+    return new AppView();
+  }
+});
