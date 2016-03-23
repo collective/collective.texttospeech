@@ -1,4 +1,4 @@
 <div id="viewlet-texttospeech"
-  i18n:domain="collective.texttospeech"
-  tal:attributes="data-voice view/voice">
+     tal:condition="view/enabled"
+     tal:attributes="data-voice view/voice">
 </div>

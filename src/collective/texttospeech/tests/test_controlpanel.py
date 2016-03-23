@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from collective.texttospeech.config import DEFAULT_ENABLED_CONTENT_TYPES
 from collective.texttospeech.config import PROJECTNAME
 from collective.texttospeech.interfaces import ITextToSpeechControlPanel
 from collective.texttospeech.testing import INTEGRATION_TESTING
@@ -53,16 +54,21 @@ class RegistryTestCase(unittest.TestCase):
         self.registry = getUtility(IRegistry)
         self.settings = self.registry.forInterface(ITextToSpeechControlPanel)
 
-    def test_option_record_in_registry(self):
-        self.assertTrue(hasattr(self.settings, 'option'))
-        self.assertEqual(self.settings.option, u'')
+    def test_enabled_content_types_record_in_registry(self):
+        self.assertTrue(hasattr(self.settings, 'enabled_content_types'))
+        self.assertEqual(self.settings.enabled_content_types, DEFAULT_ENABLED_CONTENT_TYPES)
+
+    def test_voice_record_in_registry(self):
+        self.assertTrue(hasattr(self.settings, 'voice'))
+        self.assertEqual(self.settings.voice, u'UK English Female')
 
     def test_records_removed_on_uninstall(self):
         qi = self.portal['portal_quickinstaller']
         qi.uninstallProducts(products=[PROJECTNAME])
 
         records = [
-            ITextToSpeechControlPanel.__identifier__ + '.option',
+            ITextToSpeechControlPanel.__identifier__ + '.enabled_content_types',
+            ITextToSpeechControlPanel.__identifier__ + '.voice',
         ]
 
         for r in records:
