@@ -14,9 +14,9 @@ class ITextToSpeechControlPanel(form.Schema):
 
     """Schema for the control panel form."""
 
-    option = schema.TextLine(
-        title=_(u'Option'),
-        description=_(u''),
+    voice = schema.TextLine(
+        title=_(u'Voice'),
+        description=_(u'Voice used to read the text.'),
         required=True,
-        default=u'',
+        default=u'UK English Female',
     )
