@@ -8,7 +8,12 @@ import Globals
 import unittest
 
 
-JS = '//code.responsivevoice.org/responsivevoice.js'
+JS = (
+    '//code.responsivevoice.org/responsivevoice.js',
+    '++resource++collective.texttospeech/main.js',
+)
+
+CSS = '++resource++collective.texttospeech/main.css'
 
 
 class ResourcesTestCase(unittest.TestCase):
@@ -22,15 +27,21 @@ class ResourcesTestCase(unittest.TestCase):
         self.portal = self.layer['portal']
         self.browser = Browser(self.layer['app'])
 
-    def test_js_resources(self):
+    def test_resources(self):
         self.browser.open(self.portal.absolute_url())
-        self.assertIn(JS, self.browser.contents)
+        html = self.browser.contents
+        for js in JS:
+            self.assertIn(js, html, js + ' not installed')
+        self.assertIn(CSS, html)
 
-    def test_js_resources_removed_on_uninstall(self):
+    def test_resources_removed_on_uninstall(self):
         import transaction
         qi = self.portal['portal_quickinstaller']
         qi.uninstallProducts(products=[PROJECTNAME])
         transaction.commit()
 
         self.browser.open(self.portal.absolute_url())
-        self.assertNotIn(JS, self.browser.contents)
+        html = self.browser.contents
+        for js in JS:
+            self.assertNotIn(js, html, js + ' not removed')
+        self.assertNotIn(CSS, html)
