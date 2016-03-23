@@ -18,12 +18,11 @@ define([
       };
       super(options);
       this.template = JST['app/scripts/templates/main.ejs'];
+      this.playing = false;
       this.paused = true;
       this.onstart = this.onstart.bind(this);
       this.onend = this.onend.bind(this);
-      // if (rVoice.isPlaying()) {
-      //   rVoice.cancel();
-      // }
+      rVoice.cancel();
       this.render();
     }
 
@@ -32,15 +31,19 @@ define([
     }
 
     onstart() {
+      this.playing = true;
+      this.paused = false;
       this.$('#texttospeech-button').attr('value', 'Pause');
     }
 
     onend() {
+      this.playing = false;
+      this.paused = true;
       this.$('#texttospeech-button').attr('value', 'Play');
     }
 
     play_pause() {
-      if (rVoice.isPlaying()) {
+      if (this.playing) {
         if (this.paused) {
           this.paused = false;
           this.$('#texttospeech-button').attr('value', 'Pause');
@@ -51,7 +54,6 @@ define([
           rVoice.pause();
         }
       } else {
-        this.paused = false;
         rVoice.speak(
           $('#content').text(),
           this.$el.attr('data-voice'),
