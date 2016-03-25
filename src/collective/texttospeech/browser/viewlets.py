@@ -10,6 +10,11 @@ class TextToSpeechViewlet(ViewletBase):
     """Viewlet with play button."""
 
     def enabled(self):
+        globally_enabled = api.portal.get_registry_record(
+            ITextToSpeechControlPanel.__identifier__ + '.globally_enabled')
+        if not globally_enabled:
+            return False
+
         portal_type = getattr(self.context, 'portal_type', None)
         if portal_type is None:
             return False

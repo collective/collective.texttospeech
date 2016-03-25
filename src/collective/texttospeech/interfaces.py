@@ -15,6 +15,12 @@ class ITextToSpeechControlPanel(form.Schema):
 
     """Schema for the control panel form."""
 
+    globally_enabled = schema.Bool(
+        title=_(u'Enable Text-to-Speech?'),
+        description=_(u'If selected, Text-to-Speech feature will be enabled sitewide.'),
+        default=True,
+    )
+
     enabled_content_types = schema.List(
         title=_(u'Enabled Content Types'),
         description=_(
