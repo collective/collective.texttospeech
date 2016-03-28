@@ -1,0 +1,63 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2016-03-28 19:39+0000\n"
+"PO-Revision-Date: 2016-03-28 16:44-0300\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: pt_BR\n"
+"X-Generator: Poedit 1.7.5\n"
+
+#: collective/texttospeech/profiles.zcml:14
+msgid "Add Text-to-Speech feature to Plone."
+msgstr "Adiciona a funcionalidade de Text-to-Speech ao Plone."
+
+#: collective/texttospeech/interfaces.py:19
+msgid "Enable Text-to-Speech?"
+msgstr "Habilitar Text-to-Speech?"
+
+#: collective/texttospeech/interfaces.py:25
+msgid "Enabled Content Types"
+msgstr "Tipos de conteúdo habilitados"
+
+#: collective/texttospeech/controlpanel.py:11
+msgid "Here you can modify the settings for collective.texttospeech."
+msgstr "Aqui pode modificar as configurações do collective.texttospeech."
+
+#: collective/texttospeech/interfaces.py:20
+msgid "If selected, Text-to-Speech feature will be enabled sitewide."
+msgstr "Se estiver selecionado, a funcionalidade de Text-to-Speech estará habilitada no site."
+
+#: collective/texttospeech/interfaces.py:26
+msgid "Only objects of these content types will display a Text-to-Speech button."
+msgstr "Só objetos de esses tipos de conteúdo mostrarão o botão de Text-to-Speech."
+
+#: collective/texttospeech/controlpanel.py:10
+#: collective/texttospeech/profiles.zcml:14
+#: collective/texttospeech/profiles/default/controlpanel.xml
+msgid "Text-to-Speech"
+msgstr "Text-to-Speech"
+
+#: collective/texttospeech/profiles.zcml:23
+msgid "Uninstalls collective.texttospeech."
+msgstr "Remove o collective.texttospeech."
+
+#: collective/texttospeech/interfaces.py:36
+msgid "Voice"
+msgstr "Voz"
+
+#: collective/texttospeech/interfaces.py:37
+msgid "Voice used to read the text."
+msgstr "Voz utilizada para ler o texto."
+
+#: collective/texttospeech/profiles.zcml:23
+msgid "collective.texttospeech: uninstall"
+msgstr "collective.texttospeech: uninstall"

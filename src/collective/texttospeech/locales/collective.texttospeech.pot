@@ -1,0 +1,61 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"POT-Creation-Date: 2016-03-28 19:39+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0\n"
+"Language-Code: en\n"
+"Language-Name: English\n"
+"Preferred-Encodings: utf-8 latin1\n"
+"Domain: DOMAIN\n"
+
+#: collective/texttospeech/profiles.zcml:14
+msgid "Add Text-to-Speech feature to Plone."
+msgstr ""
+
+#: collective/texttospeech/interfaces.py:19
+msgid "Enable Text-to-Speech?"
+msgstr ""
+
+#: collective/texttospeech/interfaces.py:25
+msgid "Enabled Content Types"
+msgstr ""
+
+#: collective/texttospeech/controlpanel.py:11
+msgid "Here you can modify the settings for collective.texttospeech."
+msgstr ""
+
+#: collective/texttospeech/interfaces.py:20
+msgid "If selected, Text-to-Speech feature will be enabled sitewide."
+msgstr ""
+
+#: collective/texttospeech/interfaces.py:26
+msgid "Only objects of these content types will display a Text-to-Speech button."
+msgstr ""
+
+#: collective/texttospeech/controlpanel.py:10
+#: collective/texttospeech/profiles.zcml:14
+#: collective/texttospeech/profiles/default/controlpanel.xml
+msgid "Text-to-Speech"
+msgstr ""
+
+#: collective/texttospeech/profiles.zcml:23
+msgid "Uninstalls collective.texttospeech."
+msgstr ""
+
+#: collective/texttospeech/interfaces.py:36
+msgid "Voice"
+msgstr ""
+
+#: collective/texttospeech/interfaces.py:37
+msgid "Voice used to read the text."
+msgstr ""
+
+#: collective/texttospeech/profiles.zcml:23
+msgid "collective.texttospeech: uninstall"
+msgstr ""

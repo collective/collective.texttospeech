@@ -6,6 +6,7 @@
     i18n_domain="collective.texttospeech">
 
   <five:registerPackage package="." />
+  <i18n:registerTranslations directory="locales" />
 
   <permission
       id="collective.texttospeech.Setup"
