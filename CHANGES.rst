@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0b1 (unreleased)
+1.0a2 (2016-03-28)
 ------------------
 
 - Add Brazilian Portuguese and Spanish translations.
