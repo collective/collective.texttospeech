@@ -3,7 +3,7 @@
     xmlns:i18n="http://xml.zope.org/namespaces/i18n"
     i18n:domain="collective.texttospeech"
     purge="False">
-  <configlet title="collective.texttospeech"
+  <configlet title="Text-to-Speech"
       action_id="texttospeech"
       appId="collective.texttospeech"
       category="Products"
