@@ -7,10 +7,12 @@ Text-to-Speech
 Life, the Universe, and Everything
 ==================================
 
-collective.texttospeech
+This package enables a Text-to-Speech feature in Plone.
 
-ResponsiveVoice is a HTML5-based Text-To-Speech library designed to add voice features to web sites;
-ResponsiveVoice is free for non-commercial use.
+It is currently based on `ResponsiveVoice <http://responsivevoice.org/>`_,
+an HTML5-based Text-To-Speech library designed to add voice features to web sites across multiple plataforms.
+
+ResponsiveVoice supports 51 languages through 168 voices and is free for non-commercial use.
 
 Mostly Harmless
 ===============
@@ -52,4 +54,24 @@ Check the box next to ``collective.texttospeech`` and click the 'Activate' butto
 Usage
 -----
 
-TBD
+After installing the package, go to the Text-To-Speech configlet on Site Setup.
+
+Select which content types will have the feature enabled and select which voice will be used.
+
+.. figure:: docs/controlpanel.png
+    :align: center
+    :height: 600px
+    :width: 768px
+
+    The Text-To-Speech control panel configlet.
+
+A viewlet with a 'Play' button will be displayed on objects with the feature enabled.
+
+.. figure:: docs/viewlet.png
+    :align: center
+    :height: 400px
+    :width: 768px
+
+    The Text-To-Speech feature enabled.
+
+You can pause the reader at any time by selecting 'Pause'.
