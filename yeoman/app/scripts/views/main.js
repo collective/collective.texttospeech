@@ -22,7 +22,6 @@ define([
       this.paused = true;
       this.onstart = this.onstart.bind(this);
       this.onend = this.onend.bind(this);
-      rVoice.cancel();
       this.render();
     }
 
