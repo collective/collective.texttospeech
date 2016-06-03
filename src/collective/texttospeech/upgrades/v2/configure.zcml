@@ -7,11 +7,17 @@
       destination="2"
       profile="collective.texttospeech:default">
 
-      <genericsetup:upgradeStep
-          title="Apply profile"
-          description=""
-          handler=".apply_profile"
-          />
+    <genericsetup:upgradeStep
+        title="Cook CSS resources"
+        description="There were changes in the CSS files, so we need to cook the resources."
+        handler="..cook_css_resources"
+        />
+
+    <genericsetup:upgradeStep
+        title="Cook JavaScript resources"
+        description="There were changes in the JavaScript files, so we need to cook the resources."
+        handler="..cook_javascript_resources"
+        />
 
   </genericsetup:upgradeSteps>
 
