@@ -4,6 +4,6 @@
       cacheable="False" compression="none" cookable="False" enabled="True"
       expression="" inline="False" authenticated="False" insert-after="*" />
   <javascript id="++resource++collective.texttospeech/main.js"
-      cacheable="True" compression="none" cookable="True" enabled="True"
+      cacheable="True" compression="safe" cookable="True" enabled="True"
       expression="" inline="False" authenticated="False" insert-after="*" />
 </object>

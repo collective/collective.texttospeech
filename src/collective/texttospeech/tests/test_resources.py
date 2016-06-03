@@ -2,6 +2,7 @@
 """Ensure add-on is properly installed and uninstalled."""
 from collective.texttospeech.config import PROJECTNAME
 from collective.texttospeech.testing import FUNCTIONAL_TESTING
+from collective.texttospeech.testing import IS_PLONE_5
 from plone.testing.z2 import Browser
 
 import Globals
@@ -27,6 +28,7 @@ class ResourcesTestCase(unittest.TestCase):
         self.portal = self.layer['portal']
         self.browser = Browser(self.layer['app'])
 
+    @unittest.skipIf(IS_PLONE_5, 'Plone 4 only')
     def test_resources(self):
         self.browser.open(self.portal.absolute_url())
         html = self.browser.contents

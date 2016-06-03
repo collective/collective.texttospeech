@@ -4,7 +4,8 @@ Changelog
 1.0b1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Simplify static files stack.
+  [rodfersou]
 
 
 1.0a2 (2016-03-28)

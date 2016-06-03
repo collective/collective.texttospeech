@@ -1,10 +1,14 @@
 # -*- coding: utf-8 -*-
+from plone import api
 from plone.app.robotframework.testing import AUTOLOGIN_LIBRARY_FIXTURE
 from plone.app.testing import FunctionalTesting
 from plone.app.testing import IntegrationTesting
 from plone.app.testing import PLONE_FIXTURE
 from plone.app.testing import PloneSandboxLayer
 from plone.testing import z2
+
+
+IS_PLONE_5 = api.env.plone_version().startswith('5')
 
 
 class Fixture(PloneSandboxLayer):
