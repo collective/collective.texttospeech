@@ -20,13 +20,13 @@ Mostly Harmless
 .. image:: http://img.shields.io/pypi/v/collective.texttospeech.svg
    :target: https://pypi.python.org/pypi/collective.texttospeech
 
-.. image:: https://img.shields.io/travis/simplesconsultoria/collective.texttospeech/master.svg
-    :target: http://travis-ci.org/simplesconsultoria/collective.texttospeech
+.. image:: https://img.shields.io/travis/collective/collective.texttospeech/master.svg
+    :target: http://travis-ci.org/collective/collective.texttospeech
 
-.. image:: https://img.shields.io/coveralls/simplesconsultoria/collective.texttospeech/master.svg
-    :target: https://coveralls.io/r/simplesconsultoria/collective.texttospeech
+.. image:: https://img.shields.io/coveralls/collective/collective.texttospeech/master.svg
+    :target: https://coveralls.io/r/collective/collective.texttospeech
 
-Got an idea? Found a bug? Let us know by `opening a support <https://github.com/simplesconsultoria/collective.texttospeech/issues>`_.
+Got an idea? Found a bug? Let us know by `opening a support <https://github.com/collective/collective.texttospeech/issues>`_.
 
 Don't Panic
 ===========

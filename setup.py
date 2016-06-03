@@ -30,7 +30,7 @@ setup(
     keywords='',
     author='Simples Consultoria',
     author_email='produtos@simplesconsultoria.com.br',
-    url='https://github.com/simplesconsultoria/collective.texttospeech',
+    url='https://github.com/collective/collective.texttospeech',
     packages=find_packages('src'),
     package_dir={'': 'src'},
     namespace_packages=['collective'],
