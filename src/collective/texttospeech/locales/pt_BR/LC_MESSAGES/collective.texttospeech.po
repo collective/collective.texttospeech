@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2016-06-10 20:11+0000\n"
-"PO-Revision-Date: 2016-06-10 17:15-0300\n"
+"POT-Creation-Date: 2016-06-10 21:35+0000\n"
+"PO-Revision-Date: 2016-06-10 18:35-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -37,21 +37,9 @@ msgstr "Aqui pode modificar as configurações de síntese de voz."
 msgid "If selected, Text-to-Speech feature will be enabled sitewide."
 msgstr "Se estiver selecionado, a funcionalidade de síntese de voz estará habilitada no site."
 
-#: collective/texttospeech/browser/templates/texttospeech.pt:1
-msgid "Listen"
-msgstr "Ouvir"
-
 #: collective/texttospeech/interfaces.py:26
 msgid "Only objects of these content types will display a Text-to-Speech button."
 msgstr "Só objetos de esses tipos de conteúdo mostrarão o botão de síntese de voz."
-
-#: collective/texttospeech/browser/templates/texttospeech.pt:1
-msgid "Pause"
-msgstr "Pausar"
-
-#: collective/texttospeech/browser/templates/texttospeech.pt:1
-msgid "Resume"
-msgstr "Continuar"
 
 #: collective/texttospeech/browser/templates/texttospeech.pt:11
 msgid "Speech synthesis control"
@@ -78,3 +66,15 @@ msgstr "Voz utilizada para ler o texto."
 #: collective/texttospeech/profiles.zcml:23
 msgid "collective.texttospeech: uninstall"
 msgstr "collective.texttospeech: uninstall"
+
+#: collective/texttospeech/browser/templates/texttospeech.pt:1
+msgid "⏸ Pause"
+msgstr "⏸ Pausar"
+
+#: collective/texttospeech/browser/templates/texttospeech.pt:1
+msgid "▶ Resume"
+msgstr "▶ Continuar"
+
+#: collective/texttospeech/browser/templates/texttospeech.pt:1
+msgid "🔊 Listen"
+msgstr "🔊 Ouvir"
