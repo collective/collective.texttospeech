@@ -4,6 +4,9 @@ Changelog
 1.0b1 (unreleased)
 ------------------
 
+- Implement i18n on the widget and update translations.
+  [rodfersou, hvelarde]
+
 - Simplify static files stack.
   [rodfersou]
 

@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-03-28 19:39+0000\n"
+"POT-Creation-Date: 2016-06-10 20:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -34,8 +34,24 @@ msgstr ""
 msgid "If selected, Text-to-Speech feature will be enabled sitewide."
 msgstr ""
 
+#: collective/texttospeech/browser/templates/texttospeech.pt:1
+msgid "Listen"
+msgstr ""
+
 #: collective/texttospeech/interfaces.py:26
 msgid "Only objects of these content types will display a Text-to-Speech button."
+msgstr ""
+
+#: collective/texttospeech/browser/templates/texttospeech.pt:1
+msgid "Pause"
+msgstr ""
+
+#: collective/texttospeech/browser/templates/texttospeech.pt:1
+msgid "Resume"
+msgstr ""
+
+#: collective/texttospeech/browser/templates/texttospeech.pt:11
+msgid "Speech synthesis control"
 msgstr ""
 
 #: collective/texttospeech/controlpanel.py:10
