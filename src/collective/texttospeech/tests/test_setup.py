@@ -31,6 +31,12 @@ class InstallTestCase(unittest.TestCase):
         expected = ['Manager', 'Site Administrator']
         self.assertListEqual(roles, expected)
 
+    def test_profile_version(self):
+        profile = PROJECTNAME + ':default'
+        setup_tool = self.portal['portal_setup']
+        self.assertEqual(
+            setup_tool.getLastVersionForProfile(profile), (u'2',))
+
 
 class UninstallTestCase(unittest.TestCase):
 
