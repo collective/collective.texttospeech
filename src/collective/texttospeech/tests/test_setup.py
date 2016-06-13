@@ -1,11 +1,20 @@
 # -*- coding: utf-8 -*-
 """Ensure add-on is properly installed and uninstalled."""
+from collective.texttospeech.config import IS_PLONE_5
 from collective.texttospeech.config import PROJECTNAME
 from collective.texttospeech.interfaces import IBrowserLayer
 from collective.texttospeech.testing import INTEGRATION_TESTING
 from plone.browserlayer.utils import registered_layers
 
 import unittest
+
+
+JAVASCRIPTS = (
+    '//code.responsivevoice.org/1.4/responsivevoice.js',
+    '++resource++collective.texttospeech/main.js',
+)
+
+CSS = '++resource++collective.texttospeech/main.css'
 
 
 class InstallTestCase(unittest.TestCase):
@@ -23,6 +32,17 @@ class InstallTestCase(unittest.TestCase):
 
     def test_addon_layer(self):
         self.assertIn(IBrowserLayer, registered_layers())
+
+    @unittest.skipIf(IS_PLONE_5, 'No easy way to test this under Plone 5')
+    def test_jsregistry(self):
+        resource_ids = self.portal.portal_javascripts.getResourceIds()
+        for id_ in JAVASCRIPTS:
+            self.assertIn(id_, resource_ids, id_ + ' not installed')
+
+    @unittest.skipIf(IS_PLONE_5, 'No easy way to test this under Plone 5')
+    def test_cssregistry(self):
+        resource_ids = self.portal.portal_css.getResourceIds()
+        self.assertIn(CSS, resource_ids)
 
     def test_setup_permission(self):
         permission = 'collective.texttospeech: Setup'
@@ -54,3 +74,14 @@ class UninstallTestCase(unittest.TestCase):
 
     def test_addon_layer_removed(self):
         self.assertNotIn(IBrowserLayer, registered_layers())
+
+    @unittest.skipIf(IS_PLONE_5, 'No easy way to test this under Plone 5')
+    def test_jsregistry_removed(self):
+        resource_ids = self.portal.portal_javascripts.getResourceIds()
+        for id_ in JAVASCRIPTS:
+            self.assertNotIn(id_, resource_ids, id_ + ' not removed')
+
+    @unittest.skipIf(IS_PLONE_5, 'No easy way to test this under Plone 5')
+    def test_cssregistry_removed(self):
+        resource_ids = self.portal.portal_css.getResourceIds()
+        self.assertNotIn(CSS, resource_ids)

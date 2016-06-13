@@ -8,6 +8,12 @@
       profile="collective.texttospeech:default">
 
     <genericsetup:upgradeStep
+        title="Use version 1.4 of the ResponsiveVoice API"
+        description=""
+        handler=".pin_responsivevoice"
+        />
+
+    <genericsetup:upgradeStep
         title="Cook CSS resources"
         description="There were changes in the CSS files, so we need to cook the resources."
         handler="..cook_css_resources"
