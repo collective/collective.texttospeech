@@ -3,15 +3,18 @@
      data-label-stopped="🔊 Listen"
      data-label-playing="⏸ Pause"
      data-label-paused="▶ Resume"
-     tal:condition="view/enabled"
-     tal:attributes="data-voice view/voice"
+     data-error-message="Could not load ResponsiveVoice library; Text-To-Speech feature will not be available."
+     tal:attributes="data-voice view/voice;
+                     data-enabled view/enabled"
      i18n:attributes="data-label-stopped;
                       data-label-playing;
-                      data-label-paused">
+                      data-label-paused;
+                      data-error-message">
      <input id="texttospeech-button"
           class="stopped"
           type="button"
           value="🔊 Listen"
           title="Speech synthesis control"
+          tal:condition="view/enabled"
           i18n:attributes="value; title" />
 </div>

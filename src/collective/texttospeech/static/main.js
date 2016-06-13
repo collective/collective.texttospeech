@@ -1,6 +1,12 @@
 var MainView = (function() {
   function MainView() {
     this.$el = $('#viewlet-texttospeech');
+    if (typeof window.responsiveVoice === "undefined") {
+      this.$el.html('');
+      var error_message = this.$el.attr('data-error-message');
+      console.log(error_message);
+      return;
+    }
     this.$button = $('#texttospeech-button', this.$el);
     this.voice = this.$el.attr('data-voice');
     this.label_stopped = this.$el.attr('data-label-stopped');
@@ -49,6 +55,12 @@ var MainView = (function() {
 
 var ControlPanelView = (function() {
   function ControlPanelView() {
+    if (typeof window.responsiveVoice === "undefined") {
+      var $el = $('#viewlet-texttospeech');
+      var error_message = $el.attr('data-error-message');
+      alert(error_message);
+      return;
+    }
     this.template = "<select id=\"form-widgets-voice\" name=\"form.widgets.voice\" class=\"text-widget required textline-field\">\n</select>";
     this.actual_voice = $('#form-widgets-voice').val();
     this.render();

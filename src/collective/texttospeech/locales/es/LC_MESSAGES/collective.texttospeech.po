@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2016-06-10 21:35+0000\n"
-"PO-Revision-Date: 2016-06-10 18:35-0300\n"
+"POT-Creation-Date: 2016-06-14 15:02+0000\n"
+"PO-Revision-Date: 2016-06-14 12:03-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -20,6 +20,10 @@ msgstr ""
 #: collective/texttospeech/profiles.zcml:14
 msgid "Add Text-to-Speech feature to Plone."
 msgstr "Adiciona la funcionalidad de síntesis de habla a Plone."
+
+#: collective/texttospeech/browser/templates/texttospeech.pt:1
+msgid "Could not load ResponsiveVoice library; Text-To-Speech feature will not be available."
+msgstr "No fue posible cargar la biblioteca ResponsiveVoice; la funcionalidad de síntesis de habla no estará disponible."
 
 #: collective/texttospeech/interfaces.py:19
 msgid "Enable Text-to-Speech?"
@@ -41,7 +45,7 @@ msgstr "Si está seleccionado, la funcionalidad de síntesis de habla estará ha
 msgid "Only objects of these content types will display a Text-to-Speech button."
 msgstr "Sólo los objetos de estos tipos de contenido mostrarán el botón de síntesis de habla."
 
-#: collective/texttospeech/browser/templates/texttospeech.pt:11
+#: collective/texttospeech/browser/templates/texttospeech.pt:13
 msgid "Speech synthesis control"
 msgstr "Control de la síntesis de habla"
 

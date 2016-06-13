@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-06-10 21:35+0000\n"
+"POT-Creation-Date: 2016-06-14 15:02+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -16,6 +16,10 @@ msgstr ""
 
 #: collective/texttospeech/profiles.zcml:14
 msgid "Add Text-to-Speech feature to Plone."
+msgstr ""
+
+#: collective/texttospeech/browser/templates/texttospeech.pt:1
+msgid "Could not load ResponsiveVoice library; Text-To-Speech feature will not be available."
 msgstr ""
 
 #: collective/texttospeech/interfaces.py:19
@@ -38,7 +42,7 @@ msgstr ""
 msgid "Only objects of these content types will display a Text-to-Speech button."
 msgstr ""
 
-#: collective/texttospeech/browser/templates/texttospeech.pt:11
+#: collective/texttospeech/browser/templates/texttospeech.pt:13
 msgid "Speech synthesis control"
 msgstr ""
 
