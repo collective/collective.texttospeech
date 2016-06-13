@@ -4,6 +4,9 @@ Changelog
 1.0b1 (unreleased)
 ------------------
 
+- Package is now compatible with Plone 5.0 and Plone 5.1.
+  [rodfersou, hvelarde]
+
 - Implement i18n on the widget and update translations.
   [rodfersou, hvelarde]
 
