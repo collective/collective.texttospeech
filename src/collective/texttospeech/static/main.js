@@ -34,7 +34,8 @@ var MainView = (function() {
       }
     } else {
       responsiveVoice.speak(
-        $('#content').text(),
+        // remove spaces to avoid issues with some Firefox versions
+        $('#content').text().replace(/\s+/g, ' ').trim(),
         this.voice, {
           onstart: $.proxy(this.onstart, this),
           onend: $.proxy(this.onend, this)
