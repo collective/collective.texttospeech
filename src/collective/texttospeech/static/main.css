@@ -1,1 +1,8 @@
-#viewlet-texttospeech{    text-align: right;}
+#viewlet-texttospeech
+{
+    text-align: right;
+}
+#texttospeech-button
+{
+    cursor: pointer;
+}

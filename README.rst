@@ -1,3 +1,9 @@
+.. image:: https://raw.githubusercontent.com/collective/collective.texttospeech/issue_4/docs/texttospeech.png
+    :align: left
+    :alt: Text-to-Speech
+    :height: 100px
+    :width: 100px
+
 **************
 Text-to-Speech
 **************

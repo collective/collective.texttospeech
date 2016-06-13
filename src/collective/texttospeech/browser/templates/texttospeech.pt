@@ -1,8 +1,8 @@
 <div i18n:domain="collective.texttospeech"
      id="viewlet-texttospeech"
-     data-label-stopped="Listen"
-     data-label-playing="Pause"
-     data-label-paused="Resume"
+     data-label-stopped="🔊 Listen"
+     data-label-playing="⏸ Pause"
+     data-label-paused="▶ Resume"
      tal:condition="view/enabled"
      tal:attributes="data-voice view/voice"
      i18n:attributes="data-label-stopped;
@@ -11,7 +11,7 @@
      <input id="texttospeech-button"
           class="stopped"
           type="button"
-          value="Listen"
+          value="🔊 Listen"
           title="Speech synthesis control"
           i18n:attributes="value; title" />
 </div>
