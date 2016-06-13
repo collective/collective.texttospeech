@@ -4,6 +4,9 @@ Changelog
 1.0b1 (unreleased)
 ------------------
 
+- Use version 1.4 of the ResponsiveVoice API.
+  [hvelarde]
+
 - Package is now compatible with Plone 5.0 and Plone 5.1.
   [rodfersou, hvelarde]
 
