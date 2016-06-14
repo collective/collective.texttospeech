@@ -34,6 +34,19 @@ Mostly Harmless
 
 Got an idea? Found a bug? Let us know by `opening a support <https://github.com/collective/collective.texttospeech/issues>`_.
 
+Known Issues
+------------
+
+– Voice playback rate is slow on Android native browser
+– Voice is cut off in shorter text on Android native browser
+– Audio doesn’t play on Firefox Android
+
+For more information, see `ResponsiveVoice FAQ <http://responsivevoice.org/faq/>`_.
+
+Some browser add-ons (e.g., `Privacy Badger <https://www.eff.org/privacybadger>`_), could block ResponsiveVoice library disabling the Text-to-Speech feature.
+In those cases the '🔊 Listen' button will not be available,
+neither the Text-To-Speech control panel configlet will work.
+
 Don't Panic
 ===========
 
@@ -71,7 +84,7 @@ Select which content types will have the feature enabled and select which voice 
 
     The Text-To-Speech control panel configlet.
 
-A viewlet with a 'Play' button will be displayed on objects with the feature enabled.
+A viewlet with a '🔊 Listen' button will be displayed on objects with the feature enabled.
 
 .. figure:: docs/viewlet.png
     :align: center
@@ -80,4 +93,4 @@ A viewlet with a 'Play' button will be displayed on objects with the feature ena
 
     The Text-To-Speech feature enabled.
 
-You can pause the reader at any time by selecting 'Pause'.
+You can pause/resume the reader at any time by selecting '⏸ Pause'/'▶ Resume'.
