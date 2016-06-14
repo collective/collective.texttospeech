@@ -1,4 +1,4 @@
-.. image:: https://raw.githubusercontent.com/collective/collective.texttospeech/issue_4/docs/texttospeech.png
+.. image:: https://raw.githubusercontent.com/collective/collective.texttospeech/master/docs/texttospeech.png
     :align: left
     :alt: Text-to-Speech
     :height: 100px
@@ -77,7 +77,7 @@ After installing the package, go to the Text-To-Speech configlet on Site Setup.
 
 Select which content types will have the feature enabled and select which voice will be used.
 
-.. figure:: docs/controlpanel.png
+.. figure:: https://raw.githubusercontent.com/collective/collective.texttospeech/master/docs/controlpanel.png
     :align: center
     :height: 600px
     :width: 768px
@@ -86,7 +86,7 @@ Select which content types will have the feature enabled and select which voice 
 
 A viewlet with a '🔊 Listen' button will be displayed on objects with the feature enabled.
 
-.. figure:: docs/viewlet.png
+.. figure:: https://raw.githubusercontent.com/collective/collective.texttospeech/master/docs/viewlet.png
     :align: center
     :height: 400px
     :width: 768px
