@@ -18,7 +18,7 @@ This package enables a Text-to-Speech feature in Plone.
 It is currently based on `ResponsiveVoice <http://responsivevoice.org/>`_,
 an HTML5-based Text-To-Speech library designed to add voice features to web sites across multiple plataforms.
 
-ResponsiveVoice supports 51 languages through 168 voices and is free for non-commercial use.
+ResponsiveVoice supports 51 languages through 168 voices and is `free for non-commercial use <http://responsivevoice.org/license/>`_.
 
 Mostly Harmless
 ===============
@@ -37,9 +37,9 @@ Got an idea? Found a bug? Let us know by `opening a support <https://github.com/
 Known Issues
 ------------
 
-– Voice playback rate is slow on Android native browser
-– Voice is cut off in shorter text on Android native browser
-– Audio doesn’t play on Firefox Android
+- Voice playback rate is slow on Android native browser
+- Voice is cut off in shorter text on Android native browser
+- Audio doesn’t play on Firefox Android
 
 For more information, see `ResponsiveVoice FAQ <http://responsivevoice.org/faq/>`_.
 
