@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0b1 (unreleased)
+1.0b1 (2016-06-14)
 ------------------
 
 - Use version 1.4 of the ResponsiveVoice API.
