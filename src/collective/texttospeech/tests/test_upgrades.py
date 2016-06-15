@@ -77,4 +77,23 @@ class To3TestCase(UpgradeBaseTestCase):
 
     def test_registered_steps(self):
         steps = len(self.setup.listUpgrades(self.profile_id)[0])
-        self.assertEqual(steps, 2)
+        self.assertEqual(steps, 3)
+
+    @unittest.skipIf(IS_PLONE_5, 'Upgrade step not supported under Plone 5')
+    def test_update_library_condition(self):
+        # check if the upgrade step is registered
+        title = u'Update the condition used to load ResponsiveVoice library'
+        step = self._get_upgrade_step_by_title(title)
+        assert step is not None
+
+        # simulate state on previous version
+        from collective.texttospeech.upgrades.v3 import JS
+        from collective.texttospeech.upgrades.v3 import EXPRESSION
+        portal_js = api.portal.get_tool('portal_javascripts')
+        resource = portal_js.getResource(JS)
+        resource.setExpression('')
+        assert resource.getExpression() == ''
+
+        # run the upgrade step to validate the update
+        self._do_upgrade(step)
+        self.assertEqual(resource.getExpression(), EXPRESSION)
