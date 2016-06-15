@@ -8,6 +8,7 @@ var MainView = (function() {
       return;
     }
     this.$button = $('#texttospeech-button', this.$el);
+    this.$button.fadeIn();
     this.voice = this.$el.attr('data-voice');
     this.label_stopped = this.$el.attr('data-label-stopped');
     this.label_playing = this.$el.attr('data-label-playing');
@@ -82,8 +83,7 @@ var ControlPanelView = (function() {
   return ControlPanelView;
 })();
 
-
-$(function() {
+responsiveVoice.addEventListener("OnReady", function() {
   if ($('#viewlet-texttospeech').length > 0) {
     new MainView();
   }

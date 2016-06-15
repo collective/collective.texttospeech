@@ -64,3 +64,17 @@ class To2TestCase(UpgradeBaseTestCase):
         self._do_upgrade(step)
         self.assertNotIn(OLD_JS, portal_js.getResourceIds())
         self.assertIn(NEW_JS, portal_js.getResourceIds())
+
+
+class To3TestCase(UpgradeBaseTestCase):
+
+    from_ = '2'
+    to_ = '3'
+
+    def test_profile_version(self):
+        version = self.setup.getLastVersionForProfile(self.profile_id)[0]
+        self.assertEqual(version, self.from_)
+
+    def test_registered_steps(self):
+        steps = len(self.setup.listUpgrades(self.profile_id)[0])
+        self.assertEqual(steps, 2)

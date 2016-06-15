@@ -1,6 +1,12 @@
 #viewlet-texttospeech
 {
+    min-height: 1.2em;
+
     text-align: right;
+}
+#viewlet-texttospeech > input
+{
+    display: none;
 }
 #texttospeech-button
 {
