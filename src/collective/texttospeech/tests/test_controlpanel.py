@@ -56,7 +56,7 @@ class RegistryTestCase(unittest.TestCase):
 
     def test_globally_enabled_record_in_registry(self):
         self.assertTrue(hasattr(self.settings, 'globally_enabled'))
-        self.assertEqual(self.settings.globally_enabled, True)
+        self.assertEqual(self.settings.globally_enabled, False)
 
     def test_enabled_content_types_record_in_registry(self):
         self.assertTrue(hasattr(self.settings, 'enabled_content_types'))
