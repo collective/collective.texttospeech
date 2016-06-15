@@ -4,6 +4,9 @@ Changelog
 1.0b2 (unreleased)
 ------------------
 
+- ResponsiveVoice library is now only loaded when needed.
+  [hvelarde]
+
 - The '🔊 Listen' button is now shown only after ResponsiveVoice library has been loaded.
   [rodfersou]
 

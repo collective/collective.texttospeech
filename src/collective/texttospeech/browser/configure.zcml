@@ -3,6 +3,15 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     i18n_domain="collective.texttospeech">
 
+  <browser:page
+      name="texttospeech-helper"
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      class=".HelperView"
+      allowed_attributes="enabled"
+      permission="zope.Public"
+      layer="collective.texttospeech.interfaces.IBrowserLayer"
+      />
+
   <browser:viewlet
       name="collective.texttospeech"
       class=".viewlets.TextToSpeechViewlet"
