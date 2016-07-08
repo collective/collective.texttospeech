@@ -44,7 +44,7 @@ class ITextToSpeechControlPanel(form.Schema):
     css_class_blacklist = schema.Set(
         title=_(u'CSS class blacklist'),
         description=_(
-            u'A list of CSS class identifiers that will be ignored on speech_synthesis. '
+            u'A list of CSS class identifiers that will be ignored on speech synthesis. '
             u'Elements with any of these classes directly applied to them, or to a parent element, will be skipped. '
             u'Default values include image captions ("image-caption") and side quotes ("pullquote").',
         ),

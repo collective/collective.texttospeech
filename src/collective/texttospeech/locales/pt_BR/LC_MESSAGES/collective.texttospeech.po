@@ -1,8 +1,8 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2016-06-16 15:16+0000\n"
-"PO-Revision-Date: 2016-06-16 12:16-0300\n"
+"POT-Creation-Date: 2016-07-08 22:11+0000\n"
+"PO-Revision-Date: 2016-07-08 19:11-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
@@ -14,22 +14,34 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 "Language: pt_BR\n"
-"X-Generator: Poedit 1.7.5\n"
+"X-Generator: Poedit 1.8.4\n"
 "X-Poedit-SourceCharset: UTF-8\n"
+
+#: collective/texttospeech/interfaces.py:46
+msgid "A list of CSS class identifiers that will be ignored on speech synthesis. Elements with any of these classes directly applied to them, or to a parent element, will be skipped. Default values include image captions (\"image-caption\") and side quotes (\"pullquote\")."
+msgstr "Uma lista de identificadores de classes CSS que serão ignorados na síntese de voz. Os elementos com alguma de essas classes aplicadas direitamente neles, ou em algum elemento pai, serão ignorados. Os valores padrão incluem legendas de imagem (\"image-caption\") e citações laterais (\"pullquote\")."
 
 #: collective/texttospeech/profiles.zcml:14
 msgid "Add Text-to-Speech feature to Plone."
 msgstr "Adiciona a funcionalidade de síntese de voz ao Plone."
 
+#: collective/texttospeech/interfaces.py:53
+msgid "CSS class"
+msgstr "Classes CSS"
+
+#: collective/texttospeech/interfaces.py:45
+msgid "CSS class blacklist"
+msgstr "Classes CSS a ignorar"
+
 #: collective/texttospeech/browser/templates/texttospeech.pt:1
 msgid "Could not load ResponsiveVoice library; Text-To-Speech feature is disabled or is not available."
 msgstr "Não foi possível carregar a biblioteca ResponsiveVoice; a funcionalidade de síntese de voz está inabilitada ou não está disponível."
 
-#: collective/texttospeech/interfaces.py:19
+#: collective/texttospeech/interfaces.py:20
 msgid "Enable Text-to-Speech?"
 msgstr "Habilitar síntese de voz?"
 
-#: collective/texttospeech/interfaces.py:25
+#: collective/texttospeech/interfaces.py:26
 msgid "Enabled Content Types"
 msgstr "Tipos de conteúdo habilitados"
 
@@ -37,7 +49,7 @@ msgstr "Tipos de conteúdo habilitados"
 msgid "Here you can modify the settings for collective.texttospeech."
 msgstr "Aqui pode modificar as configurações de síntese de voz."
 
-#: collective/texttospeech/interfaces.py:20
+#: collective/texttospeech/interfaces.py:21
 msgid "If selected, Text-to-Speech feature will be enabled sitewide."
 msgstr "Se estiver selecionado, a funcionalidade de síntese de voz estará habilitada no site."
 
@@ -45,7 +57,7 @@ msgstr "Se estiver selecionado, a funcionalidade de síntese de voz estará habi
 msgid "Listen"
 msgstr "Ouvir"
 
-#: collective/texttospeech/interfaces.py:26
+#: collective/texttospeech/interfaces.py:27
 msgid "Only objects of these content types will display a Text-to-Speech button."
 msgstr "Só objetos de esses tipos de conteúdo mostrarão o botão de síntese de voz."
 
@@ -57,7 +69,7 @@ msgstr "Pausar"
 msgid "Resume"
 msgstr "Continuar"
 
-#: collective/texttospeech/browser/templates/texttospeech.pt:13
+#: collective/texttospeech/browser/templates/texttospeech.pt:15
 msgid "Speech synthesis control"
 msgstr "Controle da síntese de voz"
 
@@ -71,11 +83,11 @@ msgstr "Síntese de voz"
 msgid "Uninstalls collective.texttospeech."
 msgstr "Remove o collective.texttospeech."
 
-#: collective/texttospeech/interfaces.py:36
+#: collective/texttospeech/interfaces.py:37
 msgid "Voice"
 msgstr "Voz"
 
-#: collective/texttospeech/interfaces.py:37
+#: collective/texttospeech/interfaces.py:38
 msgid "Voice used to read the text."
 msgstr "Voz utilizada para ler o texto."
 

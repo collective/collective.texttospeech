@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-06-16 15:16+0000\n"
+"POT-Creation-Date: 2016-07-08 22:11+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -14,19 +14,31 @@ msgstr ""
 "Preferred-Encodings: utf-8 latin1\n"
 "Domain: DOMAIN\n"
 
+#: collective/texttospeech/interfaces.py:46
+msgid "A list of CSS class identifiers that will be ignored on speech synthesis. Elements with any of these classes directly applied to them, or to a parent element, will be skipped. Default values include image captions (\"image-caption\") and side quotes (\"pullquote\")."
+msgstr ""
+
 #: collective/texttospeech/profiles.zcml:14
 msgid "Add Text-to-Speech feature to Plone."
+msgstr ""
+
+#: collective/texttospeech/interfaces.py:53
+msgid "CSS class"
+msgstr ""
+
+#: collective/texttospeech/interfaces.py:45
+msgid "CSS class blacklist"
 msgstr ""
 
 #: collective/texttospeech/browser/templates/texttospeech.pt:1
 msgid "Could not load ResponsiveVoice library; Text-To-Speech feature is disabled or is not available."
 msgstr ""
 
-#: collective/texttospeech/interfaces.py:19
+#: collective/texttospeech/interfaces.py:20
 msgid "Enable Text-to-Speech?"
 msgstr ""
 
-#: collective/texttospeech/interfaces.py:25
+#: collective/texttospeech/interfaces.py:26
 msgid "Enabled Content Types"
 msgstr ""
 
@@ -34,7 +46,7 @@ msgstr ""
 msgid "Here you can modify the settings for collective.texttospeech."
 msgstr ""
 
-#: collective/texttospeech/interfaces.py:20
+#: collective/texttospeech/interfaces.py:21
 msgid "If selected, Text-to-Speech feature will be enabled sitewide."
 msgstr ""
 
@@ -42,7 +54,7 @@ msgstr ""
 msgid "Listen"
 msgstr ""
 
-#: collective/texttospeech/interfaces.py:26
+#: collective/texttospeech/interfaces.py:27
 msgid "Only objects of these content types will display a Text-to-Speech button."
 msgstr ""
 
@@ -54,7 +66,7 @@ msgstr ""
 msgid "Resume"
 msgstr ""
 
-#: collective/texttospeech/browser/templates/texttospeech.pt:13
+#: collective/texttospeech/browser/templates/texttospeech.pt:15
 msgid "Speech synthesis control"
 msgstr ""
 
@@ -68,11 +80,11 @@ msgstr ""
 msgid "Uninstalls collective.texttospeech."
 msgstr ""
 
-#: collective/texttospeech/interfaces.py:36
+#: collective/texttospeech/interfaces.py:37
 msgid "Voice"
 msgstr ""
 
-#: collective/texttospeech/interfaces.py:37
+#: collective/texttospeech/interfaces.py:38
 msgid "Voice used to read the text."
 msgstr ""
 
