@@ -70,6 +70,27 @@ Go to the 'Site Setup' page in a Plone site and click on the 'Add-ons' link.
 
 Check the box next to ``collective.texttospeech`` and click the 'Activate' button.
 
+How does it work
+----------------
+
+We use JavaScript to extract all text inside an element with ``id="content"`` in the page.
+The text extraction will ignore any <iframe> elements present.
+Currently, <img> elements are neither processed but that could change in the future.
+
+It is possible to avoid reading some text that,
+regardless being present on the text flow,
+make little sense on the reading flow.
+Examples of this are image captions and side quotes.
+
+We have included a list of CSS classes that can be blacklisted to implement this feature.
+The list is configurable via an option in the control panel configlet.
+Any text inside an element with one of those CSS classes applied will be ignored.
+
+The blacklist defaults to some CSS classes used in Plone 4:
+
+* ``image-caption``: used for image captions
+* ``pullquote``: used for side quotes
+
 Usage
 -----
 

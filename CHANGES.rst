@@ -4,6 +4,10 @@ Changelog
 1.0b2 (unreleased)
 ------------------
 
+- Review text extraction logic;
+  it is now possible to ignore parts of the text via a blacklist of CSS classes accessible in the control panel configlet.
+  [rodfersou, hvelarde]
+
 - To avoid displaying the 'Listen' button with an incorrect voice,
   the feature is now globally disabled by default at installation time.
   [hvelarde]

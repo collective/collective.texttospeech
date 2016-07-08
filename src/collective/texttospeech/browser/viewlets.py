@@ -25,5 +25,13 @@ class TextToSpeechViewlet(ViewletBase):
 
     def voice(self):
         return api.portal.get_registry_record(
-            ITextToSpeechControlPanel.__identifier__ + '.voice'
-        )
+            ITextToSpeechControlPanel.__identifier__ + '.voice')
+
+    def blacklist(self):
+        css_class_blacklist = api.portal.get_registry_record(
+            ITextToSpeechControlPanel.__identifier__ + '.css_class_blacklist')
+
+        if not css_class_blacklist:
+            return ''
+
+        return ','.join(css_class_blacklist)
