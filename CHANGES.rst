@@ -1,7 +1,7 @@
 Changelog
 =========
 
-1.0b2 (unreleased)
+1.0b2 (2016-07-08)
 ------------------
 
 - Review text extraction logic;
