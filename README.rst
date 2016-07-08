@@ -100,7 +100,7 @@ Select which content types will have the feature enabled and select which voice 
 
 .. figure:: https://raw.githubusercontent.com/collective/collective.texttospeech/master/docs/controlpanel.png
     :align: center
-    :height: 600px
+    :height: 860px
     :width: 768px
 
     The Text-To-Speech control panel configlet.
