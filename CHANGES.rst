@@ -1,8 +1,8 @@
 Changelog
 =========
 
-1.0b3 (unreleased)
-------------------
+1.0rc1 (2016-07-11)
+-------------------
 
 - Ignore ``<iframe>`` tags explicitly and fix button visibility.
   [rodfersou]
