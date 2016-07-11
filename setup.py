@@ -16,7 +16,7 @@ setup(
     description=description,
     long_description=long_description,
     classifiers=[
-        'Development Status :: 4 - Beta',
+        'Development Status :: 5 - Production/Stable',
         'Environment :: Web Environment',
         'Framework :: Plone',
         'Framework :: Plone :: 4.3',
@@ -40,8 +40,8 @@ setup(
     zip_safe=False,
     install_requires=[
         'plone.api',
+        'plone.app.layout',
         'plone.app.registry',
-        'plone.app.upgrade',
         'plone.directives.form',
         'Products.CMFPlone >=4.3',
         'Products.GenericSetup',
