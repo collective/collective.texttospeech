@@ -4,7 +4,8 @@ Changelog
 1.0b3 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Show the 'Listen' button to anonymous users only.
+  [hvelarde]
 
 
 1.0b2 (2016-07-08)
