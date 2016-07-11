@@ -8,7 +8,7 @@ class TextToSpeechEditForm(controlpanel.RegistryEditForm):
 
     schema = ITextToSpeechControlPanel
     label = _(u'Text-to-Speech')
-    description = _(u'Here you can modify the settings for collective.texttospeech.')
+    description = _(u'Here you can modify speech synthesis settings.')
 
 
 class TextToSpeechControlPanel(controlpanel.ControlPanelFormWrapper):

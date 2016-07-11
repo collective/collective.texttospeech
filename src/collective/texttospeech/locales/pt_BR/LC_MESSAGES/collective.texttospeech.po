@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: \n"
-"POT-Creation-Date: 2016-07-08 22:11+0000\n"
+"POT-Creation-Date: 2016-07-11 17:24+0000\n"
 "PO-Revision-Date: 2016-07-08 19:11-0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -21,10 +21,6 @@ msgstr ""
 msgid "A list of CSS class identifiers that will be ignored on speech synthesis. Elements with any of these classes directly applied to them, or to a parent element, will be skipped. Default values include image captions (\"image-caption\") and side quotes (\"pullquote\")."
 msgstr "Uma lista de identificadores de classes CSS que serão ignorados na síntese de voz. Os elementos com alguma de essas classes aplicadas direitamente neles, ou em algum elemento pai, serão ignorados. Os valores padrão incluem legendas de imagem (\"image-caption\") e citações laterais (\"pullquote\")."
 
-#: collective/texttospeech/profiles.zcml:14
-msgid "Add Text-to-Speech feature to Plone."
-msgstr "Adiciona a funcionalidade de síntese de voz ao Plone."
-
 #: collective/texttospeech/interfaces.py:53
 msgid "CSS class"
 msgstr "Classes CSS"
@@ -34,23 +30,27 @@ msgid "CSS class blacklist"
 msgstr "Classes CSS a ignorar"
 
 #: collective/texttospeech/browser/templates/texttospeech.pt:1
-msgid "Could not load ResponsiveVoice library; Text-To-Speech feature is disabled or is not available."
+msgid "Could not load ResponsiveVoice library; speech synthesis is disabled or is not available."
 msgstr "Não foi possível carregar a biblioteca ResponsiveVoice; a funcionalidade de síntese de voz está inabilitada ou não está disponível."
 
 #: collective/texttospeech/interfaces.py:20
-msgid "Enable Text-to-Speech?"
+msgid "Enable speech synthesis?"
 msgstr "Habilitar síntese de voz?"
 
 #: collective/texttospeech/interfaces.py:26
 msgid "Enabled Content Types"
 msgstr "Tipos de conteúdo habilitados"
 
+#: collective/texttospeech/profiles.zcml:14
+msgid "Enables speech synthesis in Plone."
+msgstr "Habilita a funcionalidade de síntese de voz no Plone."
+
 #: collective/texttospeech/controlpanel.py:11
-msgid "Here you can modify the settings for collective.texttospeech."
+msgid "Here you can modify speech synthesis settings."
 msgstr "Aqui pode modificar as configurações de síntese de voz."
 
 #: collective/texttospeech/interfaces.py:21
-msgid "If selected, Text-to-Speech feature will be enabled sitewide."
+msgid "If selected, speech synthesis feature will be enabled sitewide."
 msgstr "Se estiver selecionado, a funcionalidade de síntese de voz estará habilitada no site."
 
 #: collective/texttospeech/browser/templates/texttospeech.pt:1
@@ -58,7 +58,7 @@ msgid "Listen"
 msgstr "Ouvir"
 
 #: collective/texttospeech/interfaces.py:27
-msgid "Only objects of these content types will display a Text-to-Speech button."
+msgid "Only objects of these content types will display a speech synthesis button."
 msgstr "Só objetos de esses tipos de conteúdo mostrarão o botão de síntese de voz."
 
 #: collective/texttospeech/browser/templates/texttospeech.pt:1

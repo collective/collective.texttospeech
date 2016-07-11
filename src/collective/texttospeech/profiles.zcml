@@ -8,7 +8,7 @@
       name="default"
       title="Text-to-Speech"
       directory="profiles/default"
-      description="Add Text-to-Speech feature to Plone."
+      description="Enables speech synthesis in Plone."
       provides="Products.GenericSetup.interfaces.EXTENSION"
       i18n:attributes="title; description"
       />

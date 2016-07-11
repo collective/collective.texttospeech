@@ -7,7 +7,7 @@ from Products.Five.browser import BrowserView
 
 class HelperView(BrowserView):
 
-    """Information about the state of the Text-To-Speech feature."""
+    """Information about the state of the speech synthesis feature."""
 
     def enabled(self):
         """Check if the ResponsiveVoice library needs to be loaded or

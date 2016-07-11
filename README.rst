@@ -13,12 +13,12 @@ Text-to-Speech
 Life, the Universe, and Everything
 ==================================
 
-This package enables a Text-to-Speech feature in Plone.
+This package enables `speech synthesis <https://en.wikipedia.org/wiki/Speech_synthesis>`_ in the `Plone CMS <http://plone.org/>`_.
 
 It is currently based on `ResponsiveVoice <http://responsivevoice.org/>`_,
 an HTML5-based Text-To-Speech library designed to add voice features to web sites across multiple plataforms.
 
-ResponsiveVoice supports 51 languages through 168 voices and is `free for non-commercial use <http://responsivevoice.org/license/>`_.
+ResponsiveVoice `supports 51 languages through 168 voices <http://responsivevoice.org/text-to-speech-languages/>`_ and is `free for non-commercial use <http://responsivevoice.org/license/>`_.
 
 Mostly Harmless
 ===============
@@ -45,7 +45,7 @@ For more information, see `ResponsiveVoice FAQ <http://responsivevoice.org/faq/>
 
 Some browser add-ons (e.g., `Privacy Badger <https://www.eff.org/privacybadger>`_), could block ResponsiveVoice library disabling the Text-to-Speech feature.
 In those cases the 'Listen' button will not be available,
-neither the Text-To-Speech control panel configlet will work.
+neither the Text-to-Speech control panel configlet will work.
 
 Don't Panic
 ===========
@@ -94,7 +94,7 @@ The blacklist defaults to some CSS classes used in Plone 4:
 Usage
 -----
 
-After installing the package, go to the Text-To-Speech configlet on Site Setup.
+After installing the package, go to the Text-to-Speech configlet on Site Setup.
 
 Select which content types will have the feature enabled and select which voice will be used.
 
@@ -103,7 +103,7 @@ Select which content types will have the feature enabled and select which voice 
     :height: 860px
     :width: 768px
 
-    The Text-To-Speech control panel configlet.
+    The Text-to-Speech control panel configlet.
 
 A viewlet with a 'Listen' button will be displayed on objects with the feature enabled.
 
@@ -112,6 +112,6 @@ A viewlet with a 'Listen' button will be displayed on objects with the feature e
     :height: 400px
     :width: 768px
 
-    The Text-To-Speech feature enabled.
+    The speech synthesis feature enabled.
 
 You can pause/resume the reader at any time by selecting 'Pause'/'Resume'.

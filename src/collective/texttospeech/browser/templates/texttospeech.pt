@@ -4,7 +4,7 @@
      data-label-stopped="Listen"
      data-label-playing="Pause"
      data-label-paused="Resume"
-     data-error-message="Could not load ResponsiveVoice library; Text-To-Speech feature is disabled or is not available."
+     data-error-message="Could not load ResponsiveVoice library; speech synthesis is disabled or is not available."
      tal:attributes="data-voice view/voice;
                      data-enabled view/enabled;
                      data-blacklist view/blacklist"

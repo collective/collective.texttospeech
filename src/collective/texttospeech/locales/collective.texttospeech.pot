@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2016-07-08 22:11+0000\n"
+"POT-Creation-Date: 2016-07-11 17:24+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -18,10 +18,6 @@ msgstr ""
 msgid "A list of CSS class identifiers that will be ignored on speech synthesis. Elements with any of these classes directly applied to them, or to a parent element, will be skipped. Default values include image captions (\"image-caption\") and side quotes (\"pullquote\")."
 msgstr ""
 
-#: collective/texttospeech/profiles.zcml:14
-msgid "Add Text-to-Speech feature to Plone."
-msgstr ""
-
 #: collective/texttospeech/interfaces.py:53
 msgid "CSS class"
 msgstr ""
@@ -31,23 +27,27 @@ msgid "CSS class blacklist"
 msgstr ""
 
 #: collective/texttospeech/browser/templates/texttospeech.pt:1
-msgid "Could not load ResponsiveVoice library; Text-To-Speech feature is disabled or is not available."
+msgid "Could not load ResponsiveVoice library; speech synthesis is disabled or is not available."
 msgstr ""
 
 #: collective/texttospeech/interfaces.py:20
-msgid "Enable Text-to-Speech?"
+msgid "Enable speech synthesis?"
 msgstr ""
 
 #: collective/texttospeech/interfaces.py:26
 msgid "Enabled Content Types"
 msgstr ""
 
+#: collective/texttospeech/profiles.zcml:14
+msgid "Enables speech synthesis in Plone."
+msgstr ""
+
 #: collective/texttospeech/controlpanel.py:11
-msgid "Here you can modify the settings for collective.texttospeech."
+msgid "Here you can modify speech synthesis settings."
 msgstr ""
 
 #: collective/texttospeech/interfaces.py:21
-msgid "If selected, Text-to-Speech feature will be enabled sitewide."
+msgid "If selected, speech synthesis feature will be enabled sitewide."
 msgstr ""
 
 #: collective/texttospeech/browser/templates/texttospeech.pt:1
@@ -55,7 +55,7 @@ msgid "Listen"
 msgstr ""
 
 #: collective/texttospeech/interfaces.py:27
-msgid "Only objects of these content types will display a Text-to-Speech button."
+msgid "Only objects of these content types will display a speech synthesis button."
 msgstr ""
 
 #: collective/texttospeech/browser/templates/texttospeech.pt:1
