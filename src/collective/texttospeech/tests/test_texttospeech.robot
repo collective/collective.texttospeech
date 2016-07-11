@@ -16,12 +16,12 @@ ${viewlet_button_selector}  div#viewlet-texttospeech > button
 
 *** Test cases ***
 
-Test Text-To-Speech
+Test Text-to-Speech
     Enable Autologin as  Site Administrator
 
     # open the configlet and enable the feature
     Go to  ${CONFIGLET_URL}
-    Page Should Contain  Enable Text-to-Speech?
+    Page Should Contain  Enable speech synthesis?
     Select Checkbox  css=${globally_enabled_selector}
     Click Button  Save
     Page Should Contain  Changes saved

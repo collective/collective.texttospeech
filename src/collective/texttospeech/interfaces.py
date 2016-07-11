@@ -17,15 +17,15 @@ class ITextToSpeechControlPanel(form.Schema):
     """Schema for the control panel form."""
 
     globally_enabled = schema.Bool(
-        title=_(u'Enable Text-to-Speech?'),
-        description=_(u'If selected, Text-to-Speech feature will be enabled sitewide.'),
+        title=_(u'Enable speech synthesis?'),
+        description=_(u'If selected, speech synthesis feature will be enabled sitewide.'),
         default=False,
     )
 
     enabled_content_types = schema.List(
         title=_(u'Enabled Content Types'),
         description=_(
-            u'Only objects of these content types will display a Text-to-Speech button.'),
+            u'Only objects of these content types will display a speech synthesis button.'),
         required=False,
         default=DEFAULT_ENABLED_CONTENT_TYPES,
         # we are going to list only the main content types in the widget
