@@ -26,13 +26,14 @@ Test Text-To-Speech
     Click Button  Save
     Page Should Contain  Changes saved
 
-    # the button must be visible to logged in users
+    # the button must not be visible to logged in users
     Go to  ${TEST_DOC_URL}
-    Wait Until Element Is Visible  css=${viewlet_button_selector}
+    Page Should Not Contain Element  css=${viewlet_button_selector}
 
     # the button must be visible to anonymous users
     Disable Autologin
     Go to  ${TEST_DOC_URL}
+    Page Should Contain Element  css=${viewlet_button_selector}
     Wait Until Element Is Visible  css=${viewlet_button_selector}
 
     # test the reader
