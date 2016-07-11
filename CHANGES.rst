@@ -4,6 +4,9 @@ Changelog
 1.0b3 (unreleased)
 ------------------
 
+- Ignore ``<iframe>`` tags explicitly and fix button visibility.
+  [rodfersou]
+
 - Show the 'Listen' button to anonymous users only.
   [hvelarde]
 
