@@ -147,6 +147,7 @@ class To5TestCase(UpgradeBaseTestCase):
         steps = len(self.setup.listUpgrades(self.profile_id)[0])
         self.assertEqual(steps, 2)
 
+    @unittest.skipIf(IS_PLONE_5, 'Upgrade step not supported under Plone 5')
     def test_pin_responsivevoice(self):
         # check if the upgrade step is registered
         title = u'Use version 1.5 of the ResponsiveVoice API'

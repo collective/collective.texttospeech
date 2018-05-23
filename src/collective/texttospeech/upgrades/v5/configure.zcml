@@ -1,5 +1,6 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup">
 
   <genericsetup:upgradeSteps
@@ -10,7 +11,15 @@
     <genericsetup:upgradeStep
         title="Use version 1.5 of the ResponsiveVoice API"
         description=""
-        handler=".pin_responsivevoice"
+        handler=".update_references"
+        zcml:condition="not-have plone-5"
+        />
+
+    <genericsetup:upgradeStep
+        title="Register static resources for Plone 5"
+        description=""
+        handler=".register_references_p5"
+        zcml:condition="have plone-5"
         />
 
     <genericsetup:upgradeStep

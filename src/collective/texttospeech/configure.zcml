@@ -3,6 +3,8 @@
     xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:five="http://namespaces.zope.org/five"
     xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:plone="http://namespaces.plone.org/plone"
+    xmlns:zcml="http://namespaces.zope.org/zcml"
     i18n_domain="collective.texttospeech">
 
   <five:registerPackage package="." />
@@ -27,6 +29,14 @@
       name="collective.texttospeech"
       directory="static"
       layer="collective.texttospeech.interfaces.IBrowserLayer"
+      />
+
+  <!-- plone 5 resource files -->
+  <plone:static
+      name="collective.lazysizes"
+      directory="static"
+      type="plone"
+      zcml:condition="have plone-5"
       />
 
 </configure>
